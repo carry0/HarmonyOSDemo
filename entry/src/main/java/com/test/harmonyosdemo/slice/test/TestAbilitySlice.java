@@ -10,8 +10,9 @@ import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
 public class TestAbilitySlice extends AbilitySlice {
+    //等同于et
     private TextField textField;
-    private Button butConfirm;
+    private Button butConfirm,butToNetWork;
     private final HiLogLabel LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00201, "MY_TAG");
 
     /**
@@ -22,7 +23,7 @@ public class TestAbilitySlice extends AbilitySlice {
     @Override
     protected void onStart(Intent intent) {
         super.onStart(intent);
-        setUIContent(ResourceTable.Layout_test_ability);
+        super.setUIContent(ResourceTable.Layout_test_ability);
         initView();
         initListener();
         HiLog.info(LABEL, "onStart");
@@ -37,11 +38,14 @@ public class TestAbilitySlice extends AbilitySlice {
         HiLog.info(LABEL, "onActive");
     }
 
+    //初始化控件
     private void initView() {
         textField = (TextField) findComponentById(ResourceTable.Id_tf_context);
         butConfirm = (Button) findComponentById(ResourceTable.Id_but_confirm);
+        butToNetWork = (Button) findComponentById(ResourceTable.Id_but_to_net_work);
     }
 
+    //初始化点击事件
     private void initListener() {
         butConfirm.setClickedListener(component -> {
             if (textField.getText().length() == 0) {
@@ -53,6 +57,7 @@ public class TestAbilitySlice extends AbilitySlice {
 //                present(new SecondAbilitySlice(), new Intent());
             }
         });
+        butToNetWork.setClickedListener(component -> present(new NetWorkAbilitySlice(),new Intent()));
 
     }
 

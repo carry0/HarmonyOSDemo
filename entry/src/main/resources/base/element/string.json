@@ -51,6 +51,18 @@
     {
       "name": "entry_SecondAbility",
       "value": "entry_SecondAbility"
+    },
+    {
+      "name": "networkability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "networkability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_NetWorkAbility",
+      "value": "entry_NetWorkAbility"
     }
   ]
 }

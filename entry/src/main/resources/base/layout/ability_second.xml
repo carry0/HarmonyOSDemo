@@ -3,32 +3,99 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
-    ohos:alignment="center"
+    ohos:background_element="#FAEBD7"
     ohos:orientation="vertical">
 
-    <Text
-        ohos:id="$+id:text_helloworld"
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:background_element="$graphic:background_ability_second"
-        ohos:layout_alignment="horizontal_center"
-        ohos:text="$string:secondability_HelloWorld"
-        ohos:text_size="40vp"/>
-
-    <Button
-        ohos:id="$+id:but_back"
+    <DirectionalLayout
+        ohos:visibility="hide"
         ohos:height="match_content"
         ohos:width="match_parent"
-        ohos:background_element="$graphic:shape_test_but"
-        ohos:bottom_padding="6vp"
-        ohos:end_margin="10vp"
-        ohos:end_padding="10vp"
-        ohos:start_margin="10vp"
-        ohos:start_padding="10vp"
-        ohos:text="跳转"
-        ohos:text_color="#fff"
-        ohos:text_size="20vp"
-        ohos:top_margin="10vp"
-        ohos:top_padding="6vp"/>
+        ohos:orientation="horizontal">
+
+        <Text
+            ohos:id="$+id:tv_time"
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:background_element="$graphic:shape_test_et"
+            ohos:bottom_padding="6vp"
+            ohos:end_margin="10vp"
+            ohos:end_padding="10vp"
+            ohos:start_margin="10vp"
+            ohos:start_padding="10vp"
+            ohos:text="60"
+            ohos:text_alignment="center"
+            ohos:text_color="#333"
+            ohos:text_size="20vp"
+            ohos:top_margin="10vp"
+            ohos:top_padding="6vp"
+            ohos:weight="1"/>
+
+        <Button
+            ohos:id="$+id:but_start"
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:weight="3"
+            ohos:background_element="$graphic:shape_test_but"
+            ohos:bottom_padding="6vp"
+            ohos:end_margin="10vp"
+            ohos:end_padding="10vp"
+            ohos:start_margin="10vp"
+            ohos:start_padding="10vp"
+            ohos:text="开始"
+            ohos:text_color="#fff"
+            ohos:text_size="20vp"
+            ohos:top_margin="10vp"
+            ohos:top_padding="6vp"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+
+        <Button
+            ohos:id="$+id:but_add"
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:background_element="$graphic:shape_test_but"
+            ohos:bottom_padding="6vp"
+            ohos:end_margin="10vp"
+            ohos:end_padding="10vp"
+            ohos:start_margin="10vp"
+            ohos:start_padding="10vp"
+            ohos:text="添加"
+            ohos:text_color="#fff"
+            ohos:text_size="20vp"
+            ohos:top_margin="10vp"
+            ohos:top_padding="6vp"
+            ohos:weight="1"/>
+
+        <Button
+            ohos:id="$+id:but_lose"
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:background_element="$graphic:shape_test_but"
+            ohos:bottom_padding="6vp"
+            ohos:end_margin="10vp"
+            ohos:end_padding="10vp"
+            ohos:start_margin="10vp"
+            ohos:start_padding="10vp"
+            ohos:text="减少"
+            ohos:text_color="#fff"
+            ohos:text_size="20vp"
+            ohos:top_margin="10vp"
+            ohos:top_padding="6vp"
+            ohos:weight="1"/>
+    </DirectionalLayout>
+
+
+    <ListContainer
+        ohos:id="$+id:list"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:background_element="#FFDEAD"
+        ohos:rebound_effect="true"
+        ohos:top_margin="10vp"/>
+
 
 </DirectionalLayout>
