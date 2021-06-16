@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <TextField
+        ohos:id="$+id:tf_context"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:shape_test_et"
+        ohos:bottom_padding="6vp"
+        ohos:hint="请输入你要输入的内容"
+        ohos:left_padding="10vp"
+        ohos:margin="10vp"
+        ohos:right_padding="10vp"
+        ohos:text_alignment="vertical_center"
+        ohos:text_size="20vp"
+        ohos:top_padding="6vp"/>
+
+    <Button
+        ohos:id="$+id:but_confirm"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:shape_test_but"
+        ohos:bottom_padding="6vp"
+        ohos:end_margin="10vp"
+        ohos:end_padding="10vp"
+        ohos:start_margin="10vp"
+        ohos:start_padding="10vp"
+        ohos:text="跳转"
+        ohos:text_color="#fff"
+        ohos:text_size="20vp"
+        ohos:top_margin="10vp"
+        ohos:top_padding="6vp"/>
+
+</DirectionalLayout>
