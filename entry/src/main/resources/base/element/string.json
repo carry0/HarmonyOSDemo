@@ -63,6 +63,42 @@
     {
       "name": "entry_NetWorkAbility",
       "value": "entry_NetWorkAbility"
+    },
+    {
+      "name": "net_work_picture",
+      "value": "获取网络图片"
+    },
+    {
+      "name": "net_work_visit",
+      "value": "网络访问"
+    },
+    {
+      "name": "to_list",
+      "value": "跳转到列表"
+    },
+    {
+      "name": "et_hint",
+      "value": "请输入你要输入的内容"
+    },
+    {
+      "name": "tv_num",
+      "value": "10"
+    },
+    {
+      "name": "but_start",
+      "value": "开始"
+    },
+    {
+      "name": "but_now_time",
+      "value": "正在倒计时..."
+    },
+    {
+      "name": "but_add",
+      "value": "添加"
+    },
+    {
+      "name": "but_lose",
+      "value": "减少"
     }
   ]
 }
